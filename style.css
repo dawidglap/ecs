@@ -1,0 +1,165 @@
+/* Define custom color variables at the root level */
+:root {
+    --color-primary: rgb(15, 15, 15);
+    --color-secondary: rgb(35, 45, 63);
+    --color-accent: rgb(0, 91, 65);
+    --color-accent-secondary: rgb(0, 129, 112);
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+  .vh-90{
+    height: 95vh;
+  }
+
+  .m-negative{
+    margin-top: -5vh;
+  }
+
+
+  /* CSS classes using custom colors */
+  
+  .text-primary {
+    /* Set text color to primary color */
+    color: var(--color-primary);
+  }
+
+  .text-accent{
+    color: var(--color-accent);
+  }
+
+  .text-accent-secondary{
+    color: var(--color-accent-secondary);
+  }
+  
+  .text-secondary {
+    /* Set text color to secondary color */
+    color: var(--color-secondary);
+  }
+  
+  .bg-primary {
+    /* Set background color to primary color */
+    background-color: var(--color-primary) !important;
+  }
+  
+  .bg-secondary {
+    /* Set background color to secondary color */
+    background-color: var(--color-secondary);
+  }
+  
+  .bg-accent {
+    /* Set background color to accent color */
+    background-color: var(--color-accent);
+   
+  }
+  
+  .bg-accent-secondary {
+    /* Set background color to secondary accent color */
+    background-color: var(--color-accent-secondary);
+   
+  }
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.8); */
+    background: linear-gradient(to bottom, rgba(15, 15, 15, 1) 0%,rgba(15, 15, 15, 0.8) 10%, rgba(15, 15, 15, 0.4) 100%);
+    z-index: 1;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/hero-image.webp');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 999;
+
+   
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+
+/* CTA BUTTON  */
+.btn-hover {
+    width: 300px;
+    /* font-size: 16px; */
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    min-height: 100px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+
+    border-radius: 15px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+ 
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-4 {
+    /* background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516); */
+    background-image: linear-gradient(to right, #006769, #40A578, #9DDE8B, #E6FF94);
+
+    /* box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75); */
+    box-shadow: 0 4px 15px 0 rgba(0, 103, 105, 0.75);
+
+   
+}
+
+
+
+
+
